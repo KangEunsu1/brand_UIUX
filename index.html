@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERITAGE ARCHIVE | Retro Sportswear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-black-italic { font-weight: 900; font-style: italic; }
+        .retro-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+        /* 아디다스 특유의 3선 느낌을 주는 포인트 요소 */
+        .stripe-bg {
+            background: linear-gradient(90deg, #000 0%, #000 33%, #fff 33%, #fff 66%, #000 66%, #000 100%);
+            height: 3px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
 
+    <div class="bg-gray-100 py-2 px-6 lg:px-12 text-[10px] font-bold flex justify-end gap-5 tracking-tighter uppercase border-b">
+        <a href="#" class="hover:underline">Help</a>
+        <a href="#" class="hover:underline">Join Us</a>
+        <a href="#" class="hover:underline">Sign In</a>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 px-6 lg:px-12 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-12">
+            <h1 class="text-2xl font-black-italic tracking-tighter italic leading-none">HERITAGE.</h1>
+            <div class="hidden md:flex gap-8 font-bold text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-gray-500 transition">New Releases</a>
+                <a href="#" class="hover:text-gray-500 transition">Men</a>
+                <a href="#" class="hover:text-gray-500 transition">Women</a>
+                <a href="#" class="hover:text-gray-500 transition">Archive</a>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <div class="relative hidden lg:block">
+                <input type="text" placeholder="Search" class="bg-gray-100 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-black w-48 transition-all focus:w-64">
+                <i data-lucide="search" class="absolute left-3 top-2 w-4 h-4 text-gray-400"></i>
+            </div>
+            <button class="relative hover:opacity-70 transition">
+                <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                <span class="absolute -top-1 -right-1 bg-red-600 text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+            </button>
+            <button class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <section class="relative h-[85vh] bg-black overflow-hidden flex items-end">
+        <img src="https://images.unsplash.com/photo-1549239410-8cc8433395bc?q=80&w=2000" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        
+        <div class="relative p-8 md:p-20 text-white w-full">
+            <div class="stripe-bg mb-4"></div>
+            <h2 class="text-6xl md:text-9xl font-black-italic mb-6 leading-[0.85] tracking-[ -0.05em] uppercase">
+                Retro<br>Revolution
+            </h2>
+            <p class="max-w-md text-sm md:text-base mb-10 font-medium text-gray-300 uppercase tracking-widest leading-relaxed">
+                Experience the golden era of sportswear. Re-engineered for the modern streets.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-white text-black px-10 py-4 font-black uppercase text-xs tracking-widest hover:bg-gray-200 transition">Shop The Collection</button>
+                <button class="border border-white text-white px-10 py-4 font-black uppercase text-xs tracking-widest hover:bg-white hover:text-black transition">View Lookbook</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="px-6 lg:px-12 py-20">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+            <div>
+                <span class="text-xs font-black uppercase tracking-[0.3em] text-gray-400">Archival Series</span>
+                <h3 class="text-4xl font-black-italic uppercase italic tracking-tighter">Featured Drops</h3>
+            </div>
+            <div class="flex gap-4">
+                <button class="flex items-center gap-2 font-bold uppercase text-[11px] border border-black px-6 py-2 hover:bg-black hover:text-white transition">
+                    Filter <i data-lucide="sliders-horizontal" class="w-3 h-3"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="retro-grid gap-x-4 gap-y-12">
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden bg-[#F6F6F6] aspect-[4/5] mb-5">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=800" alt="Item" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 left-4 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest italic">Sold Out</div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-white/95">
+                        <button class="w-full bg-black text-white py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-gray-800 transition">Select Size</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-black uppercase text-sm tracking-tight mb-1">'92 Block-Track Jacket</h4>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Outerwear • Originals</p>
+                    </div>
+                    <p class="font-black text-sm italic italic tracking-tighter">₩219,000</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden bg-[#F6F6F6] aspect-[4/5] mb-5">
+                    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=800" alt="Item" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest italic">New Arrival</div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-white/95">
+                        <button class="w-full bg-black text-white py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-gray-800 transition">Add To Bag</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-black uppercase text-sm tracking-tight mb-1">Heritage Pitch Jersey</h4>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Jerseys • Football</p>
+                    </div>
+                    <p class="font-black text-sm italic italic tracking-tighter">₩105,000</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden bg-[#F6F6F6] aspect-[4/5] mb-5">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=800" alt="Item" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-white/95">
+                        <button class="w-full bg-black text-white py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-gray-800 transition">Add To Bag</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-black uppercase text-sm tracking-tight mb-1">Retro Boost Runner V1</h4>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Footwear • Lifestyle</p>
+                    </div>
+                    <p class="font-black text-sm italic italic tracking-tighter">₩189,000</p>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden bg-[#F6F6F6] aspect-[4/5] mb-5">
+                    <img src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?q=80&w=800" alt="Item" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-white/95">
+                        <button class="w-full bg-black text-white py-3 font-bold uppercase text-[10px] tracking-widest hover:bg-gray-800 transition">Add To Bag</button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-black uppercase text-sm tracking-tight mb-1">Archive Duffel Bag</h4>
+                        <p class="text-xs text-gray-500 font-bold uppercase">Accessories • Gear</p>
+                    </div>
+                    <p class="font-black text-sm italic italic tracking-tighter">₩75,000</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white px-8 md:px-20 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div class="md:col-span-1">
+                <h1 class="text-3xl font-black-italic italic tracking-tighter mb-6">HERITAGE.</h1>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h5 class="font-black uppercase text-[11px] tracking-widest mb-6">Get Help</h5>
+                <ul class="text-gray-400 text-xs space-y-3 font-bold uppercase tracking-tighter">
+                    <li><a href="#" class="hover:text-white transition">Order Status</a></li>
+                    <li><a href="#" class="hover:text-white transition">Delivery</a></li>
+                    <li><a href="#" class="hover:text-white transition">Returns</a></li>
+                    <li><a href="#" class="hover:text-white transition">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="font-black uppercase text-[11px] tracking-widest mb-6">About Us</h5>
+                <ul class="text-gray-400 text-xs space-y-3 font-bold uppercase tracking-tighter">
+                    <li><a href="#" class="hover:text-white transition">News</a></li>
+                    <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                    <li><a href="#" class="hover:text-white transition">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="font-black uppercase text-[11px] tracking-widest mb-6">Subscribe</h5>
+                <p class="text-[10px] text-gray-500 mb-4 font-bold uppercase">Be the first to know about new drops.</p>
+                <div class="flex border-b border-gray-700 pb-2">
+                    <input type="email" placeholder="Email Address" class="bg-transparent text-xs w-full focus:outline-none uppercase font-bold tracking-tighter">
+                    <button class="text-xs font-black italic uppercase">Join</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-[9px] text-gray-600 font-bold uppercase tracking-[0.3em]">© 2026 HERITAGE ARCHIVE. ALL RIGHTS RESERVED</p>
+            <div class="flex flex-wrap justify-center gap-8 text-[9px] text-gray-600 font-bold uppercase tracking-widest">
+                <a href="#" class="hover:text-white transition">Guides</a>
+                <a href="#" class="hover:text-white transition">Terms of Sale</a>
+                <a href="#" class="hover:text-white transition">Terms of Use</a>
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide 아이콘 초기화
+        lucide.createIcons();
+    </script>
+</body>
+</html>
